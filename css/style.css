@@ -97,6 +97,10 @@
   opacity: 0;
 }
 
+.home .carousel-item h2 img {
+  height: 50px;
+}
+
 .home .carousel-item p {
   font-size: 15px;
   margin: 0;
