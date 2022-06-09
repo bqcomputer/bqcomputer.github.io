@@ -159,6 +159,15 @@
   transform: translateY(-5px);
 }
 
+.bi-tools {
+  color: rgb(156, 158, 160);
+  padding-top: 20%;
+}
+
+.bi-tools:hover {
+  color: #fff;
+}
+
 /* Card */
 .card {
   transition: all 0.5s;
