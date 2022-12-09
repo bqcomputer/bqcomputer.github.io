@@ -261,10 +261,42 @@ html {
   }
 }
 
+/* NEWSLETTER */
 @media (min-width: 768px) {
   .news-input {
     width: 50%;
   }
+}
+
+#newsletter a {
+  font-size: 0.9rem;
+}
+
+#newsletter .btn-primary {
+  border-color: #02a5d6;
+  color: #15202b;
+  width: 130px;
+  background: #02a5d6;
+}
+
+/* #newsletter .btn-primary:hover {
+  border-color: #02a5d6;
+  background: #02a5d6;
+  color: #15202b;
+} */
+
+#newsletter .btn-warning {
+  color: #15202b;
+}
+
+/* #newsletter .btn-warning:hover {
+  color: #fff;
+} */
+
+#newsletter .btn .btn-outline-light {
+  margin-top: 5px;
+  width: 100px;
+  border-radius: 6px;
 }
 
 /* CARD */
