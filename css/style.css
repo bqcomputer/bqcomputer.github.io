@@ -268,14 +268,15 @@ html {
   }
 }
 
-#newsletter a {
-  font-size: 0.9rem;
+#newsletter #body {
+  font-size: 16px;
+  text-transform: uppercase;
 }
 
 #newsletter .btn-primary {
   border-color: #02a5d6;
   color: #15202b;
-  width: 100px;
+  width: 226px;
   background: #02a5d6;
 }
 
