@@ -269,25 +269,39 @@ html {
 }
 
 #newsletter #body {
-  font-size: 16px;
+  font-size: 50px;
   text-transform: uppercase;
+}
+
+#newsletter #body a {
+  font-size: 13px;
 }
 
 #newsletter .btn-primary {
   border-color: #02a5d6;
   color: #15202b;
-  width: 121px;
+  width: 119.7px;
   background: #02a5d6;
 }
 
-/* #newsletter .btn-primary:hover {
-  border-color: #02a5d6;
-  background: #02a5d6;
-  color: #15202b;
-} */
+#newsletter .btn-primary:hover {
+  border-color: #066b8a;
+  background: #066b8a;
+  color: #fff;
+}
 
 #newsletter .btn-warning {
+  font-size: 13px;
+  width: 186px;
   color: #15202b;
+  margin-bottom: 25px;
+}
+
+#newsletter .btn-warning:hover {
+  border-color: rgb(153, 101, 4);
+  background-color: rgb(153, 101, 4);
+  color: #fff;
+  margin-bottom: 25px;
 }
 
 /* #newsletter .btn-warning:hover {
@@ -298,34 +312,6 @@ html {
   margin-top: 5px;
   width: 100px;
   border-radius: 6px;
-}
-
-/* LEARN */
-
-#learn p {
-  font-size: 19px;
-  line-height: 27px;
-  height: 80px;
-  overflow: hidden;
-}
-
-#learn .showContent p {
-  height: auto;
-}
-
-#learn a {
-  font-size: 19px;
-  color: #02a5d6;
-  text-decoration: none;
-  font-style: italic;
-}
-
-#learn a:hover {
-  text-decoration: underline;
-}
-
-#learn .showContent a.read-button {
-  color: crimson;
 }
 
 /* CARD */
@@ -351,6 +337,34 @@ html {
 .card-body .btn-dark {
   border: none;
   font-weight: 400;
+}
+
+/* LEARN */
+
+#learn p {
+  font-size: 21px;
+  line-height: 26.6px;
+  height: 80px;
+  overflow: hidden;
+}
+
+#learn .showContent p {
+  height: auto;
+}
+
+#learn a {
+  font-size: 21px;
+  color: #02a5d6;
+  text-decoration: none;
+  font-style: italic;
+}
+
+#learn a:hover {
+  text-decoration: underline;
+}
+
+#learn .showContent a.read-button {
+  color: crimson;
 }
 
 /* FOOTER */
