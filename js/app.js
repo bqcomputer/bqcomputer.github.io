@@ -31,6 +31,6 @@ menu_item.forEach((item) => {
 // LEARN
 $(".read-button").on("click", function () {
   $(this).parent().toggleClass("showContent");
-  let replaceText = $(this).parent().hasClass("showContent") ? "< Sembunyikan" : "Lebih banyak...";
+  let replaceText = $(this).parent().hasClass("showContent") ? "Sembunyikan" : "Lebih banyak...";
   $(this).text(replaceText);
 });
