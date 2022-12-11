@@ -27,3 +27,10 @@ menu_item.forEach((item) => {
     mobile_menu.classList.toggle("active");
   });
 });
+
+// LEARN
+$(".read-button").on("click", function () {
+  $(this).parent().toggleClass("showContent");
+  let replaceText = $(this).parent().hasClass("showContent") ? "< Sembunyikan" : "Lebih banyak...";
+  $(this).text(replaceText);
+});
