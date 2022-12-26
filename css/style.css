@@ -184,7 +184,7 @@ html {
 
 /* CAROUSEL */
 .home .carousel-item {
-  min-height: 50vh;
+  min-height: 55vh;
   background-position: center;
   background-size: cover;
   position: relative;
@@ -261,8 +261,144 @@ html {
   }
 }
 
+/* SHOWCASE */
+#showcase button {
+  background-color: rgb(82, 163, 255);
+  color: transparent;
+  border: 0 none;
+  padding: 10px 25px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 300ms ease, color 300ms ease;
+  font-size: 20px;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+}
+
+#showcase button::before {
+  content: attr(data-text);
+  display: inline-block;
+  position: absolute;
+  transition: all 300ms ease;
+  width: 100%;
+  left: 0;
+  top: 50%;
+  color: white;
+}
+#showcase button::after {
+  content: attr(data-label);
+  display: inline-block;
+  position: absolute;
+  transition: all 300ms ease;
+  width: 100%;
+  left: 0;
+  top: 50%;
+  color: white;
+}
+
+#showcase button::before {
+  opacity: 0;
+  transform: translateY(calc(-50% - 15px));
+}
+
+#showcase button::after {
+  opacity: 1;
+  transform: translateY(-50%);
+}
+
+#showcase button:hover {
+  background-color: rgb(66, 133, 209);
+}
+
+#showcase button:hover::before {
+  opacity: 1;
+  transform: translateY(-50%);
+}
+
+#showcase button:hover::after {
+  opacity: 0;
+  transform: translateY(calc(-50% + 15px));
+}
+
+#showcase button:active {
+  background-color: rgb(82, 163, 255);
+}
+
+/* CONTACT */
+#showcase .card-body {
+  min-height: 40vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#showcase .card {
+  width: 150px;
+  height: 254px;
+  background: #3405a3;
+  border-radius: 15px;
+  box-shadow: 1px 5px 60px 0px #100a886b;
+  padding: initial;
+}
+
+#showcase .card .card-border-top {
+  width: 60%;
+  height: 3%;
+  background: #6b64f3;
+  margin: auto;
+  border-radius: 0px 0px 15px 15px;
+}
+
+#showcase .card span {
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  display: block;
+  padding-top: 10px;
+  font-size: 16px;
+}
+
+#showcase .card .job {
+  font-weight: 400;
+  color: white;
+  display: block;
+  text-align: center;
+  padding-top: 3px;
+  font-size: 12px;
+}
+
+#showcase .card .img {
+  width: 70px;
+  height: 80px;
+  background: #6b64f3;
+  border-radius: 15px;
+  margin: auto;
+  margin-top: 25px;
+}
+
+#showcase .card .btn {
+  padding: 5px 25px;
+  display: block;
+  margin: auto;
+  border-radius: 8px;
+  border: none;
+  background: #6b64f3;
+  color: white;
+  font-weight: 600;
+}
+
+#showcase .card .btn:hover {
+  background: #534bf3;
+}
+
+#showcase .card a {
+  font-size: 13px;
+}
+
 /* NEWSLETTER */
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .news-input {
     width: 50%;
   }
@@ -307,13 +443,13 @@ html {
 
 /* #newsletter .btn-warning:hover {
   color: #fff;
-} */
+}
 
 #newsletter .btn .btn-outline-light {
   margin-top: 5px;
   width: 100px;
   border-radius: 6px;
-}
+} */
 
 /* CARD */
 .card {
@@ -345,7 +481,7 @@ html {
 #learn p {
   font-size: 18.8px;
   line-height: 26.6px;
-  height: 80px;
+  height: 32.7px;
   overflow: hidden;
 }
 
