@@ -325,7 +325,7 @@ html {
   background-color: rgb(82, 163, 255);
 }
 
-/* CONTACT */
+/* showcase contact */
 #showcase .card-body {
   min-height: 40vh;
   width: 100%;
@@ -334,13 +334,30 @@ html {
   justify-content: center;
 }
 
+#showcase .card-body:hover .card {
+  filter: blur(3px);
+  opacity: 0.5;
+  transform: scale(0.98);
+  box-shadow: none;
+}
+
+#showcase .card-body:hover .card:hover {
+  transform: scale(1);
+  filter: blur(0px);
+  opacity: 1;
+  box-shadow: 0 8px 20px 0px rgba(0, 0, 0, 0.125);
+  background-image: linear-gradient(144deg, #8608b4, #492fed 60%, #bd6fda);
+  color: white;
+}
+
 #showcase .card {
   width: 150px;
-  height: 254px;
-  background: #3405a3;
-  border-radius: 15px;
+  height: 204px;
+  background-image: linear-gradient(144deg, #8608b4, #492fed 60%, #bd6fda);
+  border-radius: 5px;
   box-shadow: 1px 5px 60px 0px #100a886b;
   padding: initial;
+  margin: 6px;
 }
 
 #showcase .card .card-border-top {
@@ -348,7 +365,7 @@ html {
   height: 3%;
   background: #6b64f3;
   margin: auto;
-  border-radius: 0px 0px 15px 15px;
+  border-radius: 0px 0px 5px 5px;
 }
 
 #showcase .card span {
@@ -356,7 +373,7 @@ html {
   color: white;
   text-align: center;
   display: block;
-  padding-top: 10px;
+  padding-top: 5px;
   font-size: 16px;
 }
 
@@ -370,86 +387,35 @@ html {
 }
 
 #showcase .card .img {
-  width: 70px;
+  width: 55px;
   height: 80px;
-  background: #6b64f3;
+  background: white;
   border-radius: 15px;
   margin: auto;
-  margin-top: 25px;
+  margin-top: 20px;
 }
 
 #showcase .card .btn {
-  padding: 5px 25px;
+  padding: 5px 20px;
   display: block;
   margin: auto;
-  border-radius: 8px;
+  border-radius: 5px;
   border: none;
-  background: #6b64f3;
   color: white;
   font-weight: 600;
+  margin-bottom: 20px;
+  background: #e8e8e8;
+  color: #111111;
 }
 
 #showcase .card .btn:hover {
-  background: #534bf3;
+  background: #212121;
+  color: #ffffff;
 }
 
 #showcase .card a {
   font-size: 13px;
 }
-
-/* NEWSLETTER */
-/* @media (min-width: 768px) {
-  .news-input {
-    width: 50%;
-  }
-}
-
-#newsletter #body {
-  font-size: 30px;
-  text-transform: uppercase;
-}
-
-#newsletter #body a {
-  font-size: 12px;
-}
-
-#newsletter .btn-primary {
-  border-color: #02a5d6;
-  color: #15202b;
-  width: 98px;
-  background: #02a5d6;
-  margin-top: 25px;
-}
-
-#newsletter .btn-primary:hover {
-  border-color: #066b8a;
-  background: #066b8a;
-  color: #fff;
-}
-
-#newsletter .btn-warning {
-  font-size: 12.7px;
-  width: 186px;
-  color: #15202b;
-  margin-bottom: 25px;
-}
-
-#newsletter .btn-warning:hover {
-  border-color: rgb(153, 101, 4);
-  background-color: rgb(153, 101, 4);
-  color: #fff;
-  margin-bottom: 25px;
-}
-
-/* #newsletter .btn-warning:hover {
-  color: #fff;
-}
-
-#newsletter .btn .btn-outline-light {
-  margin-top: 5px;
-  width: 100px;
-  border-radius: 6px;
-} */
 
 /* CARD */
 .card {
@@ -476,12 +442,269 @@ html {
   font-weight: 400;
 }
 
-/* LEARN */
+/* new style card*/
+#card .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 
+#card .card {
+  width: 275px;
+  height: 325px;
+  border-radius: 10px;
+  background: linear-gradient(170deg, rgba(58, 56, 56, 0.623) 0%, rgb(31, 31, 31) 100%);
+  position: relative;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.55);
+  cursor: pointer;
+  transition: all 0.3s;
+  margin: 20px;
+}
+
+#card .card:hover {
+  transform: scale(0.9);
+}
+
+#card .card span {
+  position: absolute;
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+  top: -10px;
+  left: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#card .card span::before {
+  content: "cod";
+  position: absolute;
+  width: 150%;
+  height: 40px;
+  background-image: linear-gradient(45deg, #ff6547 0%, #ffb144 51%, #ff7053 100%);
+  transform: rotate(-45deg) translateY(-20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.23);
+}
+
+#card .card span::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  bottom: 0;
+  left: 0;
+  height: 10px;
+  z-index: -1;
+  box-shadow: 140px -140px #cc3f47;
+  background-image: linear-gradient(45deg, #ff512f 0%, #f09819 51%, #ff512f 100%);
+}
+
+#card .card-body {
+  margin-top: 60px;
+}
+
+#card .card-body a {
+  margin-top: 40px;
+}
+
+/* button card */
+#card .buttons {
+  display: flex;
+  justify-content: space-around;
+  top: 20px;
+  left: 20px;
+}
+
+#card .buttons button {
+  width: 150px;
+  height: 50px;
+  background-color: transparent;
+  margin: 20px;
+  color: #ff884d;
+  position: relative;
+  overflow: hidden;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+}
+
+#card .buttons button a {
+  color: #ff884d;
+}
+
+#card .buttons button:before,
+.buttons button:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #ffc107;
+  transition: all 0.3s cubic-bezier(0.35, 0.1, 0.25, 1);
+}
+
+#card .buttons button:before {
+  right: 0;
+  top: 0;
+  transition: all 0.5s cubic-bezier(0.35, 0.1, 0.25, 1);
+}
+
+#card .buttons button:after {
+  left: 0;
+  bottom: 0;
+}
+
+#card .buttons button sub {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+
+#card .buttons button sub:before,
+.buttons button sub:after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 0;
+  background-color: #ffc107;
+  transition: all 0.3s cubic-bezier(0.35, 0.1, 0.25, 1);
+}
+
+#card .buttons button sub:before {
+  right: 0;
+  top: 0;
+  transition: all 0.5s cubic-bezier(0.35, 0.1, 0.25, 1);
+}
+
+#card .buttons button sub:after {
+  left: 0;
+  bottom: 0;
+}
+
+#card .buttons button a {
+  padding: 0;
+  margin: 0;
+  transition: all 0.4s cubic-bezier(0.35, 0.1, 0.25, 1);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#card .buttons button a:before,
+.buttons button a:after {
+  position: absolute;
+  width: 100%;
+  transition: all 0.4s cubic-bezier(0.35, 0.1, 0.25, 1);
+  z-index: 1;
+  left: 0;
+}
+
+#card .buttons button a:before {
+  content: attr(data-title);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#card .buttons button a:after {
+  content: attr(data-text);
+  top: 150%;
+  color: #ffc107;
+}
+
+#card .buttons button:hover:before,
+.buttons button:hover:after {
+  width: 100%;
+}
+
+#card .buttons button:hover sub {
+  z-index: 1;
+}
+
+#card .buttons button:hover sub:before,
+.buttons button:hover sub:after {
+  height: 100%;
+}
+
+#card .buttons button:hover a:before {
+  top: -50%;
+  transform: rotate(5deg);
+}
+
+#card .buttons button:hover a:after {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#card .buttons button.start {
+  background-color: #ffc107;
+  box-shadow: 0px 5px 10px -10px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease;
+}
+
+#card .buttons button.start a:before {
+  top: -50%;
+  transform: rotate(5deg);
+}
+
+#card .buttons button.start a:after {
+  color: white;
+  transition: all 0s ease;
+  content: attr(data-start);
+  top: 50%;
+  transform: translateY(-50%);
+  animation: start 0.3s ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes start {
+  from {
+    top: -50%;
+  }
+}
+
+#card .buttons button.start:hover:before,
+.buttons button.start:hover:after {
+  display: none;
+}
+
+#card .buttons button.start:hover sub {
+  display: none;
+}
+
+#card .buttons button:active {
+  outline: none;
+  border: none;
+}
+
+#card .buttons button:focus {
+  outline: 0;
+}
+
+/* LEARN */
 #learn p {
-  font-size: 18.8px;
-  line-height: 26.6px;
-  height: 32.7px;
+  font-size: 18.9px;
+  line-height: 30px;
+  height: 44px;
   overflow: hidden;
 }
 
