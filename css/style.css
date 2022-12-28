@@ -21,7 +21,7 @@ html {
 }
 
 #header .header {
-  min-height: 7vh;
+  min-height: 8vh;
   min-width: 100vw;
   transition: 0.3s ease background-color;
 }
