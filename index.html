@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -300,3 +301,475 @@
     <script src="/js/app.js"></script>
   </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css"
+    />
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" /> -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/b5854e7360.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <link
+      rel="icon"
+      href="/img/favicon.png"
+      sizes="16x16 32x32"
+      type="image/png"
+    />
+
+    <title>
+      bqcomputer - Jual & Repair Komputer Desktop, Laptop, Printer dll
+    </title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <section id="header">
+      <div class="header container">
+        <div class="nav-bar">
+          <div class="brand">
+            <a href="/"><img src="/img/logo.png" alt="logo" width="30px" /></a>
+          </div>
+          <div class="nav-list">
+            <div class="nav-toggler"><div class="bar"></div></div>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="#card" data-after="produk"
+                  >PRODUK</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#learn" data-after="brand"
+                  >DOKUMEN</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#footer" data-after="brand"
+                  >INFO</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#showcase" data-after="harga"
+                  >LAYANAN</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Carousel -->
+    <section class="home">
+      <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carousel"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carousel"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carousel"
+            data-bs-slide-to="4"
+            aria-label="Slide 5"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div
+            class="carousel-item active"
+            style="background-image: url('/img/carousel1.jpg')"
+          >
+            <div class="container">
+              <h2><img src="/img/lenovo.png" alt="lenovo" /></h2>
+              <p></p>
+            </div>
+          </div>
+          <div
+            class="carousel-item"
+            style="background-image: url('/img/carousel2.jpg')"
+          >
+            <div class="container">
+              <h2><img src="/img/hp.png" alt="hp" style="height: 52px" /></h2>
+              <p></p>
+            </div>
+          </div>
+          <div
+            class="carousel-item"
+            style="background-image: url('/img/carousel3.jpg')"
+          >
+            <div class="container">
+              <h2>
+                <img src="/img/dell.png" alt="dell" style="height: 58px" />
+              </h2>
+              <p></p>
+            </div>
+          </div>
+          <div
+            class="carousel-item"
+            style="background-image: url('/img/carousel4.jpg')"
+          >
+            <div class="container">
+              <h2>
+                <img src="/img/asus.png" alt="asus" style="height: 22px" />
+              </h2>
+              <p></p>
+            </div>
+          </div>
+          <div
+            class="carousel-item"
+            style="background-image: url('/img/carousel5.jpg')"
+          >
+            <div class="container">
+              <h2>
+                <img src="/img/acer.png" alt="acer" style="height: 22px" />
+              </h2>
+              <p></p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Showcase -->
+    <section
+      id="showcase"
+      class="bg-dark text-light p-5 p-lg-0 pt-lg-0 pb-lg-0 text-center text-sm-start"
+    >
+      <div class="container">
+        <div class="d-sm-flex justify-content-between align-items-center">
+          <div>
+            <h1><span class="text-warning"></span></h1>
+            <p class="lead my-4">
+              "Menyediakan bermacam Perangkat Digital berupa: Komputer Desktop,
+              Laptop & Printer Scanner Berkualitas. Dan kami juga melayani
+              <span class="text-warning">PERBAIKAN (Repair Komputer)</span>
+              untuk membantu Productivitas anda lebih mudah"
+            </p>
+            <button
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop"
+              data-label="Kirim"
+              data-text="Pilih.. :)"
+            >
+              button
+            </button>
+            <div
+              class="modal fade"
+              id="staticBackdrop"
+              data-bs-backdrop="static"
+              data-bs-keyboard="false"
+              tabindex="-1"
+              aria-labelledby="staticBackdropLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content" style="background: #15202b">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-4" id="staticBackdropLabel">
+                      Daftar Kontak
+                    </h1>
+                  </div>
+                  <div class="card-body">
+                    <div class="card">
+                      <div class="img"></div>
+                      <span> Darwis</span>
+                      <p class="job">Manager</p>
+                      <a
+                        href="https://wa.me/6282331724234?text=Silahkan%20Chat%20untuk%20Order"
+                        class="btn btn-primary"
+                        >Kirim</a
+                      >
+                    </div>
+                    <div class="card">
+                      <div class="img"></div>
+                      <span> Person</span>
+                      <p class="job">Admin</p>
+                      <a
+                        href="https://wa.me/6287819302337?text=Silahkan%20Chat%20untuk%20Order"
+                        class="btn btn-primary"
+                        >Kirim</a
+                      >
+                    </div>
+                    <div class="card">
+                      <div class="img"></div>
+                      <span> Johni</span>
+                      <p class="job">Teknisi</p>
+                      <a
+                        href="https://wa.me/6285336595778?text=Silahkan%20Chat%20untuk%20Order"
+                        class="btn btn-primary"
+                        >Kirim</a
+                      >
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <form class="btn btn-danger" data-bs-dismiss="modal">
+                      Close
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Card -->
+    <section id="card" class="p-5 bg-dark text-light">
+      <div class="container">
+        <div class="card text-light" data-aos="zoom-out-down">
+          <div class="card-body text-center">
+            <div class="h1">
+              <i class="bi bi-pc-display"></i>
+            </div>
+            <h3 class="card-title">Desktop</h3>
+            <p class="card-text"></p>
+            <div class="buttons">
+              <button class="btn">
+                <sub></sub>
+                <a
+                  href="https://wa.me/6282331724234?text=Silahkan%20Chat%20untuk%20Kelengkapannya"
+                  data-start="good luck!"
+                  data-text="mulai!"
+                  data-title="> lihat"
+                ></a>
+              </button>
+            </div>
+          </div>
+          <span></span>
+        </div>
+        <div class="card text-light" data-aos="zoom-out-down">
+          <div class="card-body text-center">
+            <div class="h1">
+              <i class="bi bi-laptop"></i>
+            </div>
+            <h3 class="card-title">Laptop</h3>
+            <p class="card-text"></p>
+            <div class="buttons">
+              <button class="btn">
+                <sub></sub>
+                <a
+                  href="https://wa.me/6282331724234?text=Silahkan%20Chat%20untuk%20Kelengkapannya"
+                  data-start="good luck!"
+                  data-text="mulai!"
+                  data-title="> lihat"
+                ></a>
+              </button>
+            </div>
+          </div>
+          <span></span>
+        </div>
+        <div class="card text-light" data-aos="zoom-out-down">
+          <div class="card-body text-center">
+            <div class="h1">
+              <i class="bi bi-printer"></i>
+            </div>
+            <h3 class="card-title">Printer/Scanner</h3>
+            <p class="card-text"></p>
+            <div class="buttons">
+              <button class="btn">
+                <sub></sub>
+                <a
+                  href="https://wa.me/6282331724234?text=Silahkan%20Chat%20untuk%20Kelengkapannya"
+                  data-start="good luck!"
+                  data-text="mulai!"
+                  data-title="> lihat"
+                ></a>
+              </button>
+            </div>
+          </div>
+          <span></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Learn 1 -->
+    <section id="learn" class="p-5 bg-dark text-light">
+      <div class="container">
+        <div class="row align-item-center justify-content-between">
+          <div class="col-md" data-aos="zoom-in-down">
+            <img src="/img/learn1.jpg" class="img-fluid" alt="" />
+          </div>
+          <div class="col-md p-4" data-aos="zoom-in-right">
+            <h4>CREATOR</h4>
+            <p>
+              Komputer/Laptop Gaming juga dikenal sebagai PC Gaming adalah
+              komputer pribadi khusus yang dirancang untuk memainkan video game
+              dengan standar yang sangat tinggi. PC Gaming juga digunakan untuk
+              tugas berat lainnya seperti mengedit
+              <span class="text-warning">Video, Design Grafis,</span> dan
+              Pekerjaan lainnya yang membutuhkan kinerja tinggi dengan budget
+              yang juga cukup tinggi.
+            </p>
+            <a href="javascript:void();" class="read-button">Selengkapnya...</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Learn 2 -->
+    <section id="learn" class="p-5 bg-dark text-light">
+      <div class="container">
+        <div class="row align-item-center justify-content-between">
+          <div class="col-md" data-aos="zoom-in-down">
+            <img src="/img/learn2.jpg" class="img-fluid" alt="" />
+          </div>
+          <div class="col-md p-4" data-aos="zoom-in-left">
+            <h4>PRODUKTIFITAS</h4>
+            <p>
+              Komputer pribadi yang dirancang untuk bekerja kantoran. Jenis
+              komputer ini juga digunakan untuk tugas ringan lainnya seperti
+              Tugas Kuliah, Sekolah, Toko Kasir atau lainnya yang membutuhkan
+              Kinerja Ringan. Komputer/Laptop ini yg cocok di kalangan pada
+              umumnya karena budget yang cukup terjangkau.
+            </p>
+            <a href="javascript:void();" class="read-button">Selengkapnya...</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Learn 3 -->
+    <section id="learn" class="p-5 bg-dark text-light">
+      <div class="container">
+        <div class="row align-item-center justify-content-between">
+          <div class="col-md" data-aos="zoom-in-down">
+            <img src="/img/learn3.jpg" class="img-fluid" alt="" />
+          </div>
+          <div class="col-md p-4" data-aos="zoom-in-right">
+            <h4>MESIN PENCETAK</h4>
+            <p>
+              Pencetak atau mesin cetak adalah peranti yang menampilkan data
+              dalam bentuk cetakan, baik berupa teks maupun gambar/grafik, di
+              atas kertas. Pencetak biasanya terbagi atas beberapa bagian, yaitu
+              penggetil sebagai alat mengambil kertas dari baki. Baki ialah
+              tempat menaruh kertas.
+            </p>
+            <a href="javascript:void();" class="read-button">Selengkapnya...</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bd-footer py-4 py-md-5 bg-body-tertiary" id="footer">
+      <div class="container py-4 py-md-5 px-4 px-md-3 text-body-secondary">
+        <div class="row">
+          <div class="col-md-3 mb-3">
+            <a
+              class="d-inline-flex align-items-center mb-2 text-body-secondary text-decoration-none"
+              href="/"
+              aria-label=""
+            >
+              <img
+                src="/img/logo.png"
+                class="d-block me-2"
+                viewBox="0 0 118 94"
+                role="img"
+              />
+              <span class="fs-5">Computer</span>
+            </a>
+            <ul class="list-unstyled small">
+              <li class="mb-2">
+                Dirancang dan dibangun oleh <a href="#header"> Pribadi</a> dan
+                <a href="#header">Kontributornya</a>.
+              </li>
+              <li class="mb-2">
+                <p class="lead fs-6"><span class=""></span>&copy; 2023</p>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-3 offset-md-3 mb-3">
+            <h5>Tautan</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="#showcase">Info</a></li>
+              <li class="mb-2"><a href="/docs/5.3/"></a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-3 mb-3">
+            <h5>Alamat</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="https://goo.gl/maps/h4TPpLFHmHUEqHe36"
+                  >Jln Urip Sumoharjo no. 9 Pabian Sumenep</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="/docs/5.3/examples/starter-template/"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+    <!-- JS AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="/js/app.js"></script>
+  </body>
+</html>
+>>>>>>> d39ebb5 (first commit)
