@@ -1,6 +1,3 @@
-// AOS
-AOS.init();
-
 // NAVBAR
 const nav_toggler = document.querySelector(".header .nav-bar .nav-list .nav-toggler");
 const mobile_menu = document.querySelector(".header .nav-bar .nav-list ul");
@@ -34,3 +31,6 @@ $(".read-button").on("click", function () {
   let replaceText = $(this).parent().hasClass("showContent") ? "< Kembali" : "Selengkapnya...";
   $(this).text(replaceText);
 });
+
+// AOS
+AOS.init();
