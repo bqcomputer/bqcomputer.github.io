@@ -31,3 +31,6 @@ $(".read-button").on("click", function () {
   let replaceText = $(this).parent().hasClass("showContent") ? "< Kembali" : "Selengkapnya...";
   $(this).text(replaceText);
 });
+
+// AOS
+AOS.init();
